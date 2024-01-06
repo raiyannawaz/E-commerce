@@ -38,7 +38,7 @@ export default function Cart({showAlert, showFinalAlert, setWhiteScreen, product
             localStorage.setItem('miuItems', JSON.stringify(products))
             let updatedLocalItems = JSON.parse(localStorage.getItem('miuItems'))
             setProducts(updatedLocalItems)
-            showAlert('Item Updated', <i className="fa fa-thumbs-up"></i>, 'primary')
+            showAlert('Item Updated', <i className="ms-2 fa fa-thumbs-up"></i>, 'primary')
         }
     }
 
@@ -69,12 +69,12 @@ export default function Cart({showAlert, showFinalAlert, setWhiteScreen, product
                     let updatedLocalItems = JSON.parse(localStorage.getItem('miuItems'))
                     setProducts(updatedLocalItems)
                     setPopUpQty(null)
-                    showAlert('Item Updated', <i className="fa fa-thumbs-up"></i>, 'primary')
+                    showAlert('Item Updated', <i className="ms-2 fa fa-thumbs-up"></i>, 'primary')
                 }
             })
         }
         else {
-            showAlert('Value Must Be Greater Than 5', <i className="fa-solid fa-exclamation"></i>, 'warning')
+            showAlert('Value Must Be Greater Than 5', <i className="ms-2 fa-solid fa-exclamation"></i>, 'warning')
         }
     }
 
@@ -87,7 +87,7 @@ export default function Cart({showAlert, showFinalAlert, setWhiteScreen, product
             localStorage.setItem('miuItems', JSON.stringify(products))
             let updatedLocalItems = JSON.parse(localStorage.getItem('miuItems'))
             setProducts(updatedLocalItems)
-            showAlert('Item Updated', <i className="fa fa-thumbs-up"></i>, 'primary')
+            showAlert('Item Updated', <i className="ms-2 fa fa-thumbs-up"></i>, 'primary')
         }
     }
 
@@ -112,7 +112,7 @@ export default function Cart({showAlert, showFinalAlert, setWhiteScreen, product
                 setCodeMsg('Code is valid')
                 setTextParam('success')
                 setIsApplied(true)
-                showAlert('Promo Applied', <i className='fa fa-check'></i>, 'success')
+                showAlert('Promo Applied', <i className='ms-2 fa fa-check'></i>, 'success')
                 e.target.classList.remove('show')
             }
             else if (code.value !== 'MIU50') {
@@ -125,10 +125,10 @@ export default function Cart({showAlert, showFinalAlert, setWhiteScreen, product
             }
         }
         else if (cartItems.length === 0) {
-            showAlert('Please Add Items', <i className='fa-solid fa-exclamation'></i>, 'danger')
+            showAlert('Please Add Items', <i className='ms-2 fa-solid fa-exclamation'></i>, 'danger')
         }
         else {
-            showAlert('Your Purchasing Amount Must Be Greather Than Rs.2500', <i className='fa fa-exclamation'></i>, 'danger')
+            showAlert('Your Purchasing Amount Must Be Greather Than Rs.2500', <i className='ms-2 fa fa-exclamation'></i>, 'danger')
         }
     }
 
@@ -143,14 +143,14 @@ export default function Cart({showAlert, showFinalAlert, setWhiteScreen, product
         if (addresses.add1 && addresses.add2 && addresses.add3 && addresses.add4 && addresses.add5 && addresses.add6) {
             if (!addressAdded) {
                 setAddressAdded(true)
-                showAlert('Address Added', <i className='fa fa-check'></i>, 'primary')
+                showAlert('Address Added', <i className='ms-2 fa fa-check'></i>, 'primary')
             }
             else {
-                showAlert('Address Updated', <i className='fa fa-check'></i>, 'primary')
+                showAlert('Address Updated', <i className='ms-2 fa fa-check'></i>, 'primary')
             }
         }
         else {
-            showAlert(`Please Dont Leave Any Input Empty`, <i className="fa-solid fa-exclamation"></i>, 'warning')
+            showAlert(`Please Dont Leave Any Input Empty`, <i className="ms-2 fa-solid fa-exclamation"></i>, 'warning')
         }
     }
 
@@ -160,18 +160,19 @@ export default function Cart({showAlert, showFinalAlert, setWhiteScreen, product
 
     const placeOrder = () => {
         if (cartItems.length === 0) {
-            showAlert('Please Add Items', <i className="fa-solid fa-exclamation"></i>, 'danger')
+            showAlert('Please Add Items', <i className="ms-2 fa-solid fa-exclamation"></i>, 'danger')
         }
         else if (totalItemsPrice <= 1000) {
-            showAlert('Purchasing Amount Must Be Greater Than Rs.1000', <i className="fa-solid fa-exclamation"></i>, 'danger')
+            showAlert('Purchasing Amount Must Be Greater Than Rs.1000', <i className="ms-2 fa-solid fa-exclamation"></i>, 'danger')
         }
         else if (!addressAdded) {
-            showAlert('Please Add Address', <i className="fa-solid fa-exclamation"></i>, 'warning')
+            showAlert('Please Add Address', <i className="ms-2 fa-solid fa-exclamation"></i>, 'warning')
         }
         else {
-            showFinalAlert('Please Wait.....', <div class="mx-2 spinner-border text-dark" role="status">
+            showFinalAlert('Please Wait.....', <div class="ms-2 spinner-border text-dark" role="status">
                 <span class="sr-only">Loading...</span>
             </div>, 'primary')
+            setWhiteScreen(true)
 
             setTimeout(() => {
                 showAlert('To Deliver', <i className='ms-2 fa fa-shipping-fast'></i>, 'primary')
@@ -180,8 +181,7 @@ export default function Cart({showAlert, showFinalAlert, setWhiteScreen, product
                     showAlert(`${addresses.add1}, ${addresses.add2}, ${addresses.add3}, ${addresses.add4}, ${addresses.add5}, ${addresses.add6}`, '', 'primary py-2',)
 
                     setTimeout(() => {
-                        setWhiteScreen(true)
-                        showFinalAlert('Ordered Successfully', <i className='fa fa-circle-check'></i>, 'success')
+                        showFinalAlert('Ordered Successfully', <i className='ms-2 fa fa-circle-check'></i>, 'success')
 
                         setTimeout(()=>{
                             for (let i = 0; i < products.length; i++) {

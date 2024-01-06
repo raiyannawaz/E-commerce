@@ -295,16 +295,16 @@ function App() {
         if (target.dataset.id === 'add') {
           products[i].listed.wishlisted = true;
           products[i].listed.cartlisted = false;
-          showAlert('Removed From Cart',<i className="fa fa-times"></i>, 'danger')
+          showAlert('Removed From Cart',<i className="ms-2 fa fa-times"></i>, 'danger')
         }
         else {
           if (products[i].listed.wishlisted === true) {
             products[i].listed.wishlisted = false;
-            showAlert('Remove From Wishlist', <i className="fa-regular fa-heart"></i>, 'danger')
+            showAlert('Remove From Wishlist', <i className="ms-2 fa-regular fa-heart"></i>, 'danger')
           }
           else {
             products[i].listed.wishlisted = true
-            showAlert('Added To Wishlist',<i className="fa fa-heart"></i>, 'primary')
+            showAlert('Added To Wishlist',<i className="ms-2 fa fa-heart"></i>, 'primary')
           }
         }
         localStorage.setItem('miuItems', JSON.stringify(products))
@@ -322,19 +322,19 @@ function App() {
         if (target.dataset.id === 'add') {
           products[i].listed.cartlisted = true;
           products[i].listed.cart.quantity = parseFloat(products[i].listed.cart.quantity) + 1;
-          showAlert('Added To Cart',<i className="fa fa-check"></i>, 'primary')
+          showAlert('Added To Cart',<i className="ms-2 fa fa-check"></i>, 'primary')
         }
         else if (target.dataset.id === 'removeWish') {
           products[i].listed.cartlisted = true;
           products[i].listed.wishlisted = false;
           products[i].listed.cart.quantity = products[i].listed.cart.quantity !==0 ? products[i].listed.cart.quantity : parseFloat(products[i].listed.cart.quantity)+1;
-          showAlert('Added To Cart',<i className="fa fa-check"></i>, 'primary')
+          showAlert('Added To Cart',<i className="ms-2 fa fa-check"></i>, 'primary')
         }
         else {
           products[i].listed.cartlisted = false;
           products[i].listed.cart.quantity = 0;
           products[i].listed.cart.selectedSize = '';
-          showAlert('Removed From Cart',<i className="fa fa-times"></i>, 'danger')
+          showAlert('Removed From Cart',<i className="ms-2 fa fa-times"></i>, 'danger')
         }
       }
     }
