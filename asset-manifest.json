@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/E-commerce/static/css/main.abb279bb.css",
+    "main.js": "/E-commerce/static/js/main.f8d3c8f8.js",
+    "static/js/787.48aa416a.chunk.js": "/E-commerce/static/js/787.48aa416a.chunk.js",
+    "static/media/pic3.jpg": "/E-commerce/static/media/pic3.f4f8460ffff669ff8f86.jpg",
+    "static/media/shoes.jpg": "/E-commerce/static/media/shoes.c61dcca8c391ab0b6cd5.jpg",
+    "static/media/pufferjacket.jpg": "/E-commerce/static/media/pufferjacket.75af4551f4e75732f1a7.jpg",
+    "static/media/img5.jpg": "/E-commerce/static/media/img5.2118c779e877eb487ec8.jpg",
+    "static/media/leatherjacket.jpg": "/E-commerce/static/media/leatherjacket.cea9a567012e9d6178f9.jpg",
+    "static/media/img4.jpg": "/E-commerce/static/media/img4.151bfc580c6eb580b0f8.jpg",
+    "static/media/img3.jpg": "/E-commerce/static/media/img3.ea75e4edf2d27882a4d3.jpg",
+    "static/media/img1.jpg": "/E-commerce/static/media/img1.b22966405d8d44aac588.jpg",
+    "static/media/img2.jpg": "/E-commerce/static/media/img2.bfb17561df21ff10190f.jpg",
+    "static/media/tshirt.jpg": "/E-commerce/static/media/tshirt.0b8f2f48296f1a71b422.jpg",
+    "static/media/analogwatch.jpg": "/E-commerce/static/media/analogwatch.5cb3d5c0f42e4be3e875.jpg",
+    "static/media/casualjacket.webp": "/E-commerce/static/media/casualjacket.affcce3b51f961548e4d.webp",
+    "static/media/boots.jpg": "/E-commerce/static/media/boots.d3d3014d0b8302294368.jpg",
+    "static/media/smartwatch.webp": "/E-commerce/static/media/smartwatch.15a116592553b5f5220a.webp",
+    "static/media/pic1.webp": "/E-commerce/static/media/pic1.d50fbeac92890f953cd9.webp",
+    "static/media/pic2.webp": "/E-commerce/static/media/pic2.fef8a93d7b30755d1a57.webp",
+    "static/media/pant.jpg": "/E-commerce/static/media/pant.a5a6406ebc65877f9b1d.jpg",
+    "static/media/shirt.jpg": "/E-commerce/static/media/shirt.9addd24b9724952fad01.jpg",
+    "static/media/jeans.avif": "/E-commerce/static/media/jeans.5764bca57af02529c160.avif",
+    "static/media/hoodie.webp": "/E-commerce/static/media/hoodie.f1a3b9d87550dbe64c5b.webp",
+    "index.html": "/E-commerce/index.html",
+    "main.abb279bb.css.map": "/E-commerce/static/css/main.abb279bb.css.map",
+    "main.f8d3c8f8.js.map": "/E-commerce/static/js/main.f8d3c8f8.js.map",
+    "787.48aa416a.chunk.js.map": "/E-commerce/static/js/787.48aa416a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abb279bb.css",
+    "static/js/main.f8d3c8f8.js"
+  ]
+}
