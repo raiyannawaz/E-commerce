@@ -169,7 +169,7 @@ export default function Cart({showAlert, showFinalAlert, setWhiteScreen, product
             showAlert('Please Add Address', <i className="ms-2 fa-solid fa-exclamation"></i>, 'warning')
         }
         else {
-            showFinalAlert('Please Wait.....', <div class="ms-2 spinner-border text-dark" role="status">
+            showFinalAlert('Please Wait.....', <div class="ms-2 spinner-border text-light" role="status">
                 <span class="sr-only">Loading...</span>
             </div>, 'primary')
             setWhiteScreen(true)

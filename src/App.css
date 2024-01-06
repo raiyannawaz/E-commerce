@@ -697,7 +697,11 @@ input[type="number"]::-webkit-inner-spin-button{
   /* SideDisplay  */
   
 #display .carousel-inner .carousel-item {
-  height: 250px;
+  height: 225px;
+}
+
+#sideDisplay .carousel-inner .carousel-item {
+  height: 400px;
 }
   #sideDisplay h2 {
     font-size: 2rem;

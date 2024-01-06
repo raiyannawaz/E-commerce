@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './Components/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Components/Home';
 import Collections from './Components/Collections';
 import img1 from '../src/Img/analogwatch.jpg'
