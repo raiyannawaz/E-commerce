@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import CartItems from './CartItems'
+import { Link } from 'react-router-dom';
 
 export default function Cart({showAlert, showFinalAlert, setWhiteScreen, products, setProducts, handleWishlist, handleCart }) {
 
@@ -252,7 +253,7 @@ export default function Cart({showAlert, showFinalAlert, setWhiteScreen, product
                         </div>
                         {cartItems.length === 0 ? <div className="cart-container bg-white mt-3 shadow">
                             <h2>No Items</h2>
-                            <a href="/collections"><button className='px-3'>Shop Now</button></a>
+                            <Link href="/collections"><button className='px-3'>Shop Now</button></Link>
                         </div> : cartItems.map((cartItem) => {
                             return <CartItems key={cartItem.id} cartItem={cartItem} popUpQty={popUpQty} setPopUpQty={setPopUpQty} onSubmit={onSubmit} handleWishlist={handleWishlist} handleCart={handleCart} handleQty={handleQty} handleSize={handleSize} />
                         })}

@@ -1,5 +1,6 @@
 import React from 'react'
 import WishlistItem from './WishlistItem'
+import { Link } from 'react-router-dom'
 
 export default function WishlistItems({ products, handleWishlist, handleCart }) {
     let wishlistItems = products.filter((product) => {
@@ -10,7 +11,7 @@ export default function WishlistItems({ products, handleWishlist, handleCart }) 
             {wishlistItems.length === 0 ?
                 <div className="wishlist-container">
                     <h2>No Items</h2>
-                    <a href="/collections"><button className='px-3'>Shop Now</button></a>
+                    <Link href="/collections"><button className='px-3'>Shop Now</button></Link>
                 </div>
                 :
                 <div className="container py-lg-4 py-3 collections">
