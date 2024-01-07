@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/E-commerce/static/css/main.253810d4.css",
-    "main.js": "/E-commerce/static/js/main.fc07c13e.js",
+    "main.css": "/E-commerce/static/css/main.d744747d.css",
+    "main.js": "/E-commerce/static/js/main.a95f682b.js",
     "static/js/787.48aa416a.chunk.js": "/E-commerce/static/js/787.48aa416a.chunk.js",
     "static/media/pic3.jpg": "/E-commerce/static/media/pic3.f4f8460ffff669ff8f86.jpg",
     "static/media/shoes.jpg": "/E-commerce/static/media/shoes.c61dcca8c391ab0b6cd5.jpg",
@@ -24,12 +24,12 @@
     "static/media/jeans.avif": "/E-commerce/static/media/jeans.5764bca57af02529c160.avif",
     "static/media/hoodie.webp": "/E-commerce/static/media/hoodie.f1a3b9d87550dbe64c5b.webp",
     "index.html": "/E-commerce/index.html",
-    "main.253810d4.css.map": "/E-commerce/static/css/main.253810d4.css.map",
-    "main.fc07c13e.js.map": "/E-commerce/static/js/main.fc07c13e.js.map",
+    "main.d744747d.css.map": "/E-commerce/static/css/main.d744747d.css.map",
+    "main.a95f682b.js.map": "/E-commerce/static/js/main.a95f682b.js.map",
     "787.48aa416a.chunk.js.map": "/E-commerce/static/js/787.48aa416a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.253810d4.css",
-    "static/js/main.fc07c13e.js"
+    "static/css/main.d744747d.css",
+    "static/js/main.a95f682b.js"
   ]
 }
