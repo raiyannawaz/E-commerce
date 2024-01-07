@@ -253,7 +253,7 @@ export default function Cart({showAlert, showFinalAlert, setWhiteScreen, product
                         </div>
                         {cartItems.length === 0 ? <div className="cart-container bg-white mt-3 shadow">
                             <h2>No Items</h2>
-                            <Link href="/collections"><button className='px-3'>Shop Now</button></Link>
+                            <Link to="/collections" className='btn-redirect'>Shop Now</Link>
                         </div> : cartItems.map((cartItem) => {
                             return <CartItems key={cartItem.id} cartItem={cartItem} popUpQty={popUpQty} setPopUpQty={setPopUpQty} onSubmit={onSubmit} handleWishlist={handleWishlist} handleCart={handleCart} handleQty={handleQty} handleSize={handleSize} />
                         })}

@@ -11,7 +11,7 @@ export default function WishlistItems({ products, handleWishlist, handleCart }) 
             {wishlistItems.length === 0 ?
                 <div className="wishlist-container">
                     <h2>No Items</h2>
-                    <Link href="/collections"><button className='px-3'>Shop Now</button></Link>
+                    <Link to="/collections" className='btn-redirect'>Shop Now</Link>
                 </div>
                 :
                 <div className="container py-lg-4 py-3 collections">
